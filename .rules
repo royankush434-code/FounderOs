@@ -1,0 +1,42 @@
+You are building FounderOS — an AI startup validation platform for founders.
+
+PROJECT STACK:
+- Next.js with App Router
+- Tailwind CSS
+- Groq API (model: llama-3.3-70b-versatile)
+- API key stored in .env.local as GROQ_API_KEY
+
+DESIGN RULES — ALWAYS follow these:
+- Background: #0c0c0f (dark)
+- Accent color: #ff4d2e (orange-red)
+- Headings font: Syne (Google Fonts)
+- Body font: DM Sans (Google Fonts)
+- All UI must be mobile friendly
+- Dark cards with subtle borders (#1e1e2a)
+- No purple gradients ever
+
+WHAT THIS APP DOES:
+- User types a startup idea
+- Clicks "Analyze My Idea"
+- Groq API analyzes it and returns JSON
+- Results shown in styled cards:
+  Market Demand Score, Top 5 Competitors,
+  3 Biggest Risks, 3 Market Opportunities,
+  Overall Viability Score, Advisor Summary
+
+BUILD ORDER — when I ask for new features, do them in this order:
+1. Landing page + idea input (DONE)
+2. Razorpay payment (₹499) before showing report
+3. User login with Google (Firebase Auth)
+4. Save past reports to user account
+5. AI Advisor chat (remembers your idea history)
+6. Financial model generator
+7. Pitch deck generator
+
+IMPORTANT RULES:
+- NEVER break features that are already working
+- NEVER add features I didn't ask for
+- NEVER put API keys in the code — always use .env.local
+- Keep code clean and simple
+- If something isn't working, fix the simplest thing first
+- Always tell me what you changed and why
